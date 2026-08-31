@@ -1,0 +1,14 @@
+name: openai-compatible-example
+provider: openai_compatible
+model: YOUR_PROVIDER_MODEL_ID
+base_url: https://openrouter.ai/api/v1
+api_key_env: OPENROUTER_API_KEY
+api: chat_completions
+system_prompt: prompts/system.md
+system_role: system
+max_tokens: 8192
+max_tokens_parameter: max_tokens
+temperature: 0
+json_mode: true
+timeout_seconds: 600
+retries: 5

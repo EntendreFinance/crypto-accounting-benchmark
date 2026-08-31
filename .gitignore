@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+.ruff_cache/
+.coverage
+htmlcov/
+.env
+.DS_Store
+Thumbs.db
+
+# Populated by `cab dataset download`. Nothing here is tracked.
+data/*
+!data/.gitkeep
+
+# Generated model answers, evaluations, reports, and leaderboards.
+output/*
+!output/.gitkeep

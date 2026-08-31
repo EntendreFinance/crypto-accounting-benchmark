@@ -1,0 +1,9 @@
+name: local-command-example
+provider: command
+model: my-local-model
+system_prompt: prompts/system.md
+command:
+  - python
+  - examples/model_command.py
+timeout_seconds: 600
+retries: 1
