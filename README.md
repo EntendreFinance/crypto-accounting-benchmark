@@ -351,6 +351,15 @@ cannot prove anonymity against someone holding the source ledger.
 
 To report a privacy or security concern, see [SECURITY.md](SECURITY.md).
 
+## License
+
+The code in this repository is licensed under the [Apache License 2.0](LICENSE).
+
+The dataset is licensed separately, under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): share and adapt with
+attribution, for non-commercial purposes. The two licenses are independent, so a permitted
+use of this runner is not by itself a permitted use of the data.
+
 ## Citation
 
 The paper is not on a preprint server, so no DOI or arXiv identifier is asserted. Cite the

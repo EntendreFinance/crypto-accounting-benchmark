@@ -8,6 +8,11 @@ version = "0.1.0"
 description = "Educational, reproducible runner for Crypto Accounting Bench"
 readme = "README.md"
 requires-python = ">=3.10"
+license = { file = "LICENSE" }
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+]
 dependencies = [
   "huggingface-hub>=0.34",
   "jinja2>=3.1",
