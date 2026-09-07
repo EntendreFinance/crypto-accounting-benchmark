@@ -58,8 +58,8 @@ currencies, non-zero amounts, and quantities are otherwise exact.
 
 ## Three attempts
 
-The paper evaluates three independent attempts per task. With 123 tasks, each evaluated model
-therefore produces 369 attempts. The paper evaluates 12 models, for 4,428 evaluations in total.
+The paper evaluates three independent attempts per task. With 118 tasks, each evaluated model
+therefore produces 354 attempts. The paper evaluates 12 models, for 4,248 evaluations in total.
 Do not compare `@k` metrics from runs using different values of `k` as if they were identical.
 
 ## Leaderboard trust

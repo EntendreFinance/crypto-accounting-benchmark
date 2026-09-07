@@ -34,8 +34,8 @@ to become the benchmark's ceiling.
 ## 2. Make the task hard in the intended dimension only
 
 Each task hands the model the transaction evidence and the organization's **complete**
-chart of accounts, which in this dataset ranges from 95 to 583 accounts. The model must
-name accounts exactly as they appear in that chart.
+chart of accounts, a median of 569 accounts per task. The model must name accounts
+exactly as they appear in that chart.
 
 This concentrates the difficulty on the accounting judgment - which account does this
 movement belong in - rather than on recall of an account list the model has never seen.
@@ -98,7 +98,7 @@ actually test - the deciding non-wallet account plus the entry shape - and the n
 admitted per group was capped. Without a cap, the easiest and most numerous pattern in a
 production ledger dominates the dataset, and a model that learns one convention scores
 well on a benchmark that looks large. This cap, not the size of the source ledger, is
-what limited the dataset to 123 tasks. Expanding the dataset meant finding new *kinds*
+what limited the dataset to 118 tasks. Expanding the dataset meant finding new *kinds*
 of decisions, not more rows.
 
 **Evidence must support the deciding line.** The hard half of every task is
@@ -109,9 +109,9 @@ function pair, a recurrence profile, tax-lot rows showing cost basis relieved. T
 where the deciding account was knowable only from outside the record were rejected.
 
 The consequence is visible in the dataset statistics and is worth reading as a feature
-rather than an accident: coverage is uneven. 41 of 123 tasks come from one organization,
-and rubric families range from 37 tasks down to 3. That is what a rule-based admission
-process produces from real data. The alternative - synthesizing filler tasks to balance
+rather than an accident: coverage is uneven. Organizations contribute unequal numbers
+of tasks, and rubric families range from 37 tasks down to 5. That is what a rule-based
+admission process produces from real data. The alternative - synthesizing filler tasks to balance
 the table - would have made the distribution prettier and the benchmark weaker.
 
 **Transferable rule.** Write admission rules before you scale, cap by the decision under

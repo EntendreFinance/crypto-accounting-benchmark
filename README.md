@@ -4,13 +4,13 @@ Can a language model read one crypto-asset transaction and reproduce the **journ
 organization actually recorded** for it?
 
 This repository is the toolkit that answers that question for *your* model. You point it at a
-model, it runs 123 tasks, scores the answers deterministically, and writes an HTML report plus a
+model, it runs 118 tasks, scores the answers deterministically, and writes an HTML report plus a
 local leaderboard. It has no opinions of its own about accounting: the ground truth is what a
 real ledger recorded, and the scorer only checks whether the model reproduced it.
 
 - **This repository** — the runner, the scorer, the reports, the tests.
 - **[The dataset on Hugging Face](https://huggingface.co/datasets/Entendre/Crypto-Accounting-Bench)** —
-  123 tasks with prompts, expected answers, rubrics, and a manifest. Downloaded by one command
+  118 tasks with prompts, expected answers, rubrics, and a manifest. Downloaded by one command
   below; nothing from it is stored in this repository.
 
 ---
@@ -99,7 +99,7 @@ scorer and asserts a perfect score. If it passes, the dataset and the scorer agr
 below 100% afterwards belongs to the model rather than to the harness:
 
 ```json
-{ "tasks": 123, "failures": [] }
+{ "tasks": 118, "failures": [] }
 ```
 
 ---
@@ -157,7 +157,7 @@ Try three tasks first. This costs almost nothing and catches a broken adapter im
 cab run --pipeline pipelines/my-model.yaml --attempts 1 --limit 3
 ```
 
-Then the real thing — 123 tasks, three attempts each, four requests in flight:
+Then the real thing — 118 tasks, three attempts each, four requests in flight:
 
 ```bash
 cab benchmark --pipeline pipelines/my-model.yaml --attempts 3 --max-concurrent 4
@@ -338,7 +338,7 @@ to tens of thousands of tokens. Raise `--max-concurrent` if your provider allows
 
 It does not test market prediction, trading, tax preparation, audit, month-end close, or authority
 to post entries in production. A high score means a model reproduced recorded journal entries on
-123 historical tasks. It is not deployment approval, and nothing here is accounting advice.
+118 historical tasks. It is not deployment approval, and nothing here is accounting advice.
 
 The dataset records are transformed derivatives of production accounting evidence. Names,
 identifiers, addresses, assets, chains, amounts, quantities, prices, and timestamps are synthetic;
