@@ -40,7 +40,7 @@ def build_export(root: Path) -> tuple[Path, int]:
                 "input": _load_json(task_dir / "input.json"),
                 "expected_answer": _load_json(task_dir / "expected_answer.json"),
             }
-            stream.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")))
+            stream.write(json.dumps(row, ensure_ascii=False))
             stream.write("\n")
 
     excluded_roots = {".cache", ".git"}

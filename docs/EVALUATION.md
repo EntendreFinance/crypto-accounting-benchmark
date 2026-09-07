@@ -41,6 +41,11 @@ The required gates are:
 The `passThreshold` value stored with each rubric remains an attempt-level 85% diagnostic. It
 does not define the paper's headline `Pass@k` metric.
 
+Those four are the gates this scorer computes from the answer alone. The paper's protocol runs
+seven: these four, plus wallet-custody correctness, a check that the task's reference entry is
+gradeable, and a material-accounting gate read from frozen judge verdicts. A `Pass@k` from this
+scorer is therefore a lower bound on the paper's in the gates as well as in the rubric.
+
 ## Metrics
 
 - **Mean Score**: average weighted rubric score over every expected attempt. Missing or failed
