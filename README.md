@@ -234,7 +234,9 @@ matter how much rubric weight it collected:
 Two honest limits on these numbers:
 
 **This scorer is a lower bound.** Mechanical equality cannot credit a correct treatment expressed
-through a different but defensible account, which a rubric-guided judge can. Report it as the
+through a different but defensible account, which a rubric-guided judge can. The four gates above
+are also a subset: the paper's protocol runs seven ([docs/EVALUATION.md](docs/EVALUATION.md)), so
+a `Pass@k` from here is a lower bound in the gates as well as in the rubric. Report it as the
 *public deterministic lower-bound scorer*, and expect a judge to score the same answers slightly
 higher.
 
@@ -351,14 +353,27 @@ To report a privacy or security concern, see [SECURITY.md](SECURITY.md).
 
 ## Citation
 
-The paper citation and DOI will be added on publication. Until then, cite the dataset:
+The paper is not on a preprint server, so no DOI or arXiv identifier is asserted. Cite the
+paper and the dataset:
+
+```
+Kareem Khattab, Omar Khattab, and Mohamed Ibrahem.
+Crypto Accounting Bench: Evaluating Frontier and Open-Weight Models on
+Crypto-Asset Accounting Tasks. Entendre Finance, September 2026.
+```
 
 ```bibtex
 @misc{crypto_accounting_bench_2026,
-  title        = {Crypto Accounting Bench},
-  author       = {{Entendre Finance}},
+  title        = {Crypto Accounting Bench: Evaluating Frontier and Open-Weight
+                  Models on Crypto-Asset Accounting Tasks},
+  author       = {Khattab, Kareem and Khattab, Omar and Ibrahem, Mohamed},
   year         = {2026},
-  note         = {Public benchmark dataset. Research paper forthcoming},
+  month        = sep,
+  institution  = {Entendre Finance},
+  note         = {Public benchmark dataset and evaluation set},
   howpublished = {\url{https://huggingface.co/datasets/Entendre/Crypto-Accounting-Bench}}
 }
 ```
+
+Record both the Hugging Face dataset revision and the Git commit of this runner, and name the
+scorer that produced any result you report.

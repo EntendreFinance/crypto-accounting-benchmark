@@ -5,13 +5,21 @@ abstract: >-
   journal entry an organization recorded for a crypto-asset transaction, using
   that organization's own chart of accounts.
 message: >-
-  If you use this benchmark, please cite the dataset. The paper citation and DOI
-  will be added when published.
+  If you use this benchmark, please cite the paper and the dataset. The paper is
+  not on a preprint server, so no DOI or arXiv identifier is asserted.
 type: dataset
 repository-code: "https://github.com/EntendreFinance/crypto-accounting-benchmark"
 url: "https://huggingface.co/datasets/Entendre/Crypto-Accounting-Bench"
 authors:
-  - name: "Entendre Finance"
+  - family-names: "Khattab"
+    given-names: "Kareem"
+    affiliation: "Entendre Finance"
+  - family-names: "Khattab"
+    given-names: "Omar"
+    affiliation: "Entendre Finance"
+  - family-names: "Ibrahem"
+    given-names: "Mohamed"
+    affiliation: "Entendre Finance"
 keywords:
   - benchmark
   - accounting
