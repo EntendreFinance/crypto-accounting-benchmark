@@ -1,0 +1,10 @@
+name: openai-example
+provider: openai
+model: YOUR_OPENAI_MODEL_ID
+api_key_env: OPENAI_API_KEY
+api: responses
+system_prompt: prompts/system.md
+max_tokens: 32000
+reasoning_effort: high
+timeout_seconds: 1200
+retries: 5
